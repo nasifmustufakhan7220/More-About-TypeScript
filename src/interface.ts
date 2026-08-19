@@ -90,3 +90,59 @@ const remaining: MathOparation = (a, b)=>{
     return a % b;
 }
 
+//Interfaces can be extended+
+interface Person {
+    name: string;
+    age: number;
+}
+//Then you want a student to have everything a person has, plus course.
+
+interface Students extends Person {
+    course: string;
+}
+
+const student1: Students ={
+    name: "Nasif",
+    age: 24,
+    course: "CSE"
+}
+
+//Multiple interfaces can be extended
+
+interface Employee {
+    salary: number;
+}
+
+interface Manager extends Person, Employee {
+    department: string;
+}
+
+const manager: Manager = {
+    name: "Nasif",
+    age: 24,
+    salary: 50000,
+    department: "IT"
+}
+
+//Interface and arrays of objects
+// This is where interfaces become really useful.
+
+interface USer {
+    name: string;
+    age: number;
+    active: boolean;
+}
+
+const users: USer[] = [
+    {
+        name: "Nasif",
+        age: 24,
+        active: true
+    },
+    {
+        name: "Amina",
+        age: 22,
+        active: false
+    }
+]
+
