@@ -9,7 +9,7 @@ const useState = <T>(initialValue: T): [T, (newValue: T)=> void]=>{
 }
 
 const [counter, setCounter] = useState<number>(0);
-const[name, setName]=useState<string>("Nasif");
+const[names, setName]=useState<string>("Nasif");
 
 interface User<T, N>{
     name: T;
