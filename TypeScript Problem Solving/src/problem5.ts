@@ -8,11 +8,10 @@ const student = {
     marks: [30, 35, 40, 25]
 }
 
-
 const getStudentResult = (student: Student)=>{
     interface Students {
         name: string;
-        average: number,
+        average: number;
         result: string;
     }
 
@@ -30,7 +29,7 @@ const getStudentResult = (student: Student)=>{
 
     const averageMarks: number = total / student.marks.length;
 
-    students['name'] = students.name;
+    students['name'] = student.name;
     students['average'] = averageMarks;
     
 

@@ -15,7 +15,7 @@ const getStudentResult = (student) => {
     }
     const total = student.marks.reduce((acc, curr) => acc + curr, 0);
     const averageMarks = total / student.marks.length;
-    students['name'] = students.name;
+    students['name'] = student.name;
     students['average'] = averageMarks;
     if (averageMarks >= 40) {
         students['result'] = "Passed";
